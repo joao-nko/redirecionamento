@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecionando...</title>
-    <script>
-        window.onload = function() {
-            // Se o WebView permitir, abre o navegador externo
-            window.open('https://rooster.dev.br', '_blank');
-            
-            // Se não funcionar, tenta redirecionar o próprio WebView
-            setTimeout(() => {
-                window.location.href = 'https://rooster.dev.br';
-            }, 1000);
-        }
-    </script>
+    <title>Redirecionamento</title>
 </head>
 <body>
-    <p>Redirecionando...</p>
+    <h1>Redirecionamento</h1>
+
+    <!-- Botão para abrir no navegador -->
+    <button id="abrirNavegador" style="padding: 10px 20px; font-size: 16px; cursor: pointer;">
+        Abrir no Navegador
+    </button>
+
+    <script>
+      document.getElementById('abrirNavegador').addEventListener('click', function() {
+        // Aqui você coloca a URL para onde quer redirecionar
+        window.open('https://www.seusite.com.br', '_blank');
+      });
+    </script>
 </body>
 </html>
-
